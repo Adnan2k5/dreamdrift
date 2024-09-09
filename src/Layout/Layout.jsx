@@ -6,7 +6,7 @@ export const Layout = ({children}) => {
   return (
     <div>
         <Navbar/>
-        <div className="hero m-auto w-[90vw] mt-[5rem] h-[80vh]">
+        <div className="hero md:mt-32 m-auto w-[90vw] p-5 mt-[2rem] h-[80vh]">
             {children}
         </div>
         <Footer/>

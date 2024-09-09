@@ -7,7 +7,7 @@ export const Navbar = () => {
  
   return (
     <div>
-      <div className="flex fixed top-0 left-0 z-50 p-2 items-center justify-center w-screen h-[10vh] bg-black">
+      <div className="flex backdrop:blur-lg  fixed top-0 left-0 z-50 p-2 items-center justify-center w-screen h-[10vh] bg-black">
         <div className="nav w-[90%] flex justify-between m-auto">
           <div className="nav-logo flex items-center p-2 justify-center">
             <h1 className="font-mono md:text-xl lg:text-2xl text-white text-lg">Dream Drift</h1>
@@ -25,7 +25,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed top-0 right-0 h-full w-1/2 bg-black text-white flex flex-col items-center justify-center space-y-5 transform transition-transform duration-500 ${
+        className={`fixed top-0 z-40 right-0 h-full w-1/2 bg-black text-white flex flex-col items-center justify-center space-y-5 transform transition-transform duration-500 ${
           open ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
         <ul className="flex flex-col items-center gap-5 text-lg">
           <li className="hover:text-gray-300 cursor-pointer">Home</li>
