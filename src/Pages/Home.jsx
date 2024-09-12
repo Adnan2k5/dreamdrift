@@ -5,10 +5,10 @@ import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 import webd from '../assets/webd.png'
 import social from '../assets/social.png'
-import content from '../assets/content.png'
+import video from '../assets/video.png'
 
 
-
+//#182923
 
 export const Home = () => {
   return (
@@ -23,7 +23,7 @@ export const Home = () => {
           />
           <div className="absolute z-10 mt-12  items-center justify-center h-[40vh] w-full inset-0  flex flex-col gap-2 text-white">
             <AnimatedGradientText>
-              <span className={cn(`inline animate-gradient bg-gradient-to-r from-[#bbe18a] via-[#040459] to-[#cacb7f] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl`)}>
+              <span className={cn(`inline animate-gradient bg-gradient-to-r from-[#bbe18a] via-[#040459] to-[#cacb7f] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-lg md:text-xl lg:text-2xl`)}>
                 Dream Drift Services
               </span>
             </AnimatedGradientText>
@@ -31,22 +31,22 @@ export const Home = () => {
         </div>
         <div className="side  relative hover:scale-105 shadow-2xl transition-all duration-300  backdrop-blur-lg backdrop-saturate-150 bg-black/15 border-2 border-[rgba(255, 255, 255, 0.125)] z-30 -mt-24 rounded-lg  h-[30vh] w-[80vw]">
             <div className="title p-2 flex items-center justify-center">
-                <h1 className="text-sm text-wrap text-center text-white  md:text-xl lg:text-2xl">Customized Services  at your fingertip</h1>
+                <h1 className="text-sm text-wrap font-mono text-center text-white  md:text-xl lg:text-2xl">Our most loved services</h1>
             </div>
             <div className="elements  flex items-center justify-center  h-[20vh] w-full">
               <div className="items w-full">
                 <ul className="flex gap-2 md:justify-around justify-around  p-4 text-white text-wrap text-sm">
-                  <li  className="w-1/3 hover:scale-125 transition-all duration-300 hover:text-cyan-600 md:text-xl text-center flex gap-2 text-black flex-col justify-center items-center">
+                  <li  className="w-1/3 hover:scale-125 transition-all duration-300 hover:text-cyan-600 md:text-xl text-center flex gap-2 text-white flex-col justify-center items-center">
                   <img  className=" mix-blend-color-burn" src={webd} height={50} width={50} alt="Web Developement"/>
-                    <p>Web Designing & Development</p>
+                    <p className="text-lg font-mono">Web Designing & Development</p>
                   </li>
-                  <li className="w-1/3 hover:scale-125 transition-all duration-300 hover:text-cyan-600 md:text-xl text-center flex flex-col gap-2 text-black justify-center items-center">
+                  <li className="w-1/3 hover:scale-125 transition-all duration-300 hover:text-cyan-600 md:text-xl text-center flex flex-col gap-2 text-white justify-center items-center">
                   <img className=" mix-blend-color-burn" src={social} height={50} width={50} alt="Social Media"/>
-                  Social Media Management
+                  <p className="text-lg font-mono">Social Media Management</p>
                   </li>
-                  <li className="w-1/3 hover:scale-125 transition-all duration-300 hover:text-cyan-600 md:text-xl text-center flex flex-col gap-2 text-black justify-center items-center">
-                  <img className=" mix-blend-color-burn" src={content} height={50} width={50} alt="Content Writing"/>
-                  Content Writing & Video Editing
+                  <li className="w-1/3 hover:scale-125 transition-all duration-300 hover:text-cyan-600 md:text-xl text-center flex flex-col gap-2 text-white justify-center items-center">
+                  <img className=" mix-blend-color-burn" src={video} height={50} width={50} alt="Content Writing"/>
+                  <p className="text-lg font-mono">Video Editing</p>
                   </li>
                 </ul>
                 <p className="text-center h-fit w-fit m-auto"><AnimatedGradientText>

@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
  
   return (
     <div>
-      <div className="flex backdrop:blur-lg  fixed top-0 left-0 z-50 p-2 items-center justify-center w-screen h-[10vh] bg-black">
+      <div className={`flex backdrop:blur-lg  fixed top-0 left-0 z-50 p-2 items-center ${scrolled ? 'bg-[#182923]/90 backdrop-blur-md' : 'bg-[#182923]/50'}  justify-center w-screen h-[10vh] bg-[#182923]`}>
         <div className="nav w-[90%] flex justify-between m-auto">
           <div className="nav-logo flex items-center p-2 justify-center">
             <h1 className="font-mono md:text-xl lg:text-2xl text-white text-lg">Dream Drift</h1>
