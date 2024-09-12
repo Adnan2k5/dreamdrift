@@ -2,6 +2,7 @@ import React from "react";
 import about from "../assets/about.png";
 import { motion } from "framer-motion";
 import IconCloud from "@/components/magicui/icon-cloud";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 import qoute from "../assets/qoute.png";
@@ -57,7 +58,7 @@ export const About = () => {
             <span className="flex justify-start">
               <img src={qoute} alt="qoute" className="w-12 h-12" />
             </span>
-            <p className="text-lg w-full text-wrap md:text-xl mt-4">
+            <p className="text-lg w-full text-justify text-wrap md:text-xl mt-4">
               At Dream Drift Services, we are passionate about helping
               businesses grow through creative solutions. Our team specializes
               in web design and development, video editing, social media
@@ -75,28 +76,28 @@ export const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false, amount: 0.5 }}
-        className="tech-stack text-2xl md:text-4xl mt-44"
+        className="tech-stack  text-2xl md:text-4xl mt-44"
       >
-        <span>
-          <h1 className="text-white border-b-2 border-cyan-400 w-fit">
+        <span className="flex justify-end">
+          <h1 className="text-white border-b-2  border-cyan-400 w-fit">
             Tech Stack
           </h1>
         </span>
         <div className="content flex transition-all duration-300  flex-col gap-8 md:flex-row lg:flex-row w-full">
-          <div className="relative mt-8 flex flex-col h-full  w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
-            <IconCloud iconSlugs={slugs} />
+          <div className="text mt-8 rounded-lg flex justify-end ">
+            <p className="text-lg text-justify text-white w-[80vw] md:w-[90%] text-wrap md:text-xl">
+              At Dream Drift Services, we utilize a versatile tech stack to
+              deliver top-notch solutions. From using React for dynamic web
+              interfaces to Express and Node.js for seamless backend
+              functionality, we ensure robust performance. For design, we rely
+              on Figma and Adobe Creative Suite to craft visually appealing,
+              user-focused designs. Our commitment to using cutting-edge
+              technologies ensures that every project meets the highest
+              standards of quality and efficiency.
+            </p>
           </div>
-          <div className="text mt-8 rounded-lg ">
-              <p className="text-lg text-white w-[80vw] md:w-[60%] text-wrap md:text-xl">
-                At Dream Drift Services, we utilize a versatile tech stack to
-                deliver top-notch solutions. From using React for dynamic web
-                interfaces to Express and Node.js for seamless backend
-                functionality, we ensure robust performance. For design, we rely
-                on Figma and Adobe Creative Suite to craft visually appealing,
-                user-focused designs. Our commitment to using cutting-edge
-                technologies ensures that every project meets the highest
-                standards of quality and efficiency.
-              </p>
+          <div className="relative mt-8  flex flex-col h-full  w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+            <IconCloud iconSlugs={slugs} />
           </div>
         </div>
       </motion.div>

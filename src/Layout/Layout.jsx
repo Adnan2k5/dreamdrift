@@ -11,10 +11,10 @@ export const Layout = ({children}) => {
         <div className="hero md:mt-32 m-auto w-[90vw] p-5 mt-[2rem] h-[80vh]">
             {children}
         </div>
-        <div className="about mt-32 p-5  m-auto w-[90vw]">
+        <div id='about' className="about mt-32 p-5  m-auto w-[90vw]">
           <About/>
         </div>
-        <div className="services p-5 m-auto w-[90vw] mt-[12rem]">
+        <div id='services' className="services p-5 m-auto w-[90vw] mt-[12rem]">
           <Services/>
         </div>
     </div>
