@@ -47,7 +47,7 @@ export const Web = () => {
               sethover(true);
             }}
             onMouseLeave={() => sethover(false)}
-            className="card1 card-shine-effect md:w-1/3 p-5 hover:h-[36vh] hover:items-start  transition-all duration-500 w-full  flex justify-center  items-center rounded-[4rem] h-[10vh]"
+            className="card1 card-shine-effect md:w-1/3 p-5 hover:h-[60vh] hover:items-start  transition-all duration-500 w-full  flex justify-center  items-center rounded-[4rem] h-[10vh]"
           >
             <div className="transition-all duration-500 flex flex-col gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo  flex items-center gap-5">
@@ -70,7 +70,7 @@ export const Web = () => {
               sethover1(true);
             }}
             onMouseLeave={() => sethover1(false)}
-            className="card1 card-shine-effect p-5 md:w-[50vw] md:hover:h-[28vh] hover:h-[38vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]"
+            className="card1 card-shine-effect p-5 md:w-[50vw] md:hover:h-[28vh] hover:h-[66vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]"
           >
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
@@ -89,7 +89,7 @@ export const Web = () => {
               sethover3(true);
             }}
             onMouseLeave={() => sethover3(false)}
-            className="card1 card-shine-effect p-5 md:w-[40vw] hover:h-[40vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[34vh] flex justify-center items-center  rounded-[4rem] h-[10vh]"
+            className="card1 card-shine-effect p-5 md:w-[40vw] hover:h-[74vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[34vh] flex justify-center items-center  rounded-[4rem] h-[10vh]"
           >
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
@@ -108,7 +108,7 @@ export const Web = () => {
               sethover2(true);
             }}
             onMouseLeave={() => sethover2(false)}
-            className="card1 card-shine-effect p-5 md:w-[33vw] hover:h-[38vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[34vh] flex justify-center items-center  rounded-[4rem] h-[10vh]">
+            className="card1 card-shine-effect p-5 md:w-[33vw] hover:h-[68vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[34vh] flex justify-center items-center  rounded-[4rem] h-[10vh]">
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
                 <img src={ecomm} alt="Web" height={60} width={60} />
@@ -126,7 +126,7 @@ export const Web = () => {
               sethover4(true);
             }}
             onMouseLeave={() => sethover4(false)}
-            className="card1 m-auto card-shine-effect p-5 md:w-[33vw] hover:h-[36vh] hover:items-start transition-all duration-500 w-full md:hover:h-[34vh] border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]">
+            className="card1 m-auto card-shine-effect p-5 md:w-[33vw] hover:h-[60 vh] hover:items-start transition-all duration-500 w-full md:hover:h-[34vh] border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]">
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo  flex gap-5 justify-between items-center">
                 <img src={crm} alt="Web" height={60} width={60} />

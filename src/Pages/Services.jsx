@@ -19,11 +19,11 @@ export function Services() {
           Our Services
         </h1>
       </div>
-      <div className="content mt-8 flex w-full gap-5 justify-around items-center flex-wrap">
-        <a className="w-full md:w-[25vw]" href="/web">
-          <div className="card-shine-effect hover:scale-105 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
+      <div className="content mt-8 flex md:max-h-9 w-full gap-5 justify-around items-center flex-wrap">
+        <a className="w-full  md:w-[25vw]" href="/web">
+          <div className="card-shine-effect hover:scale-105 xl:h-[26vh] duration-300 transition-all h-[33vh] flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
             <img src={webd} alt="Web" height={50} width={50} />
-            <h3 className="title text-center text-lg md:text-xl">
+            <h3 className="title text-wrap text-center text-lg md:text-xl">
               Tech Production
             </h3>
           </div>
@@ -36,7 +36,7 @@ export function Services() {
             </h3>
           </div>
         </a>
-        <div className="card-shine-effect hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
+        <div className="card-shine-effect  hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
           <img src={ai} alt="Ai" height={50} width={50} />
           <h3 className="title text-center text-lg md:text-xl">Ai Services</h3>
         </div>
@@ -44,7 +44,7 @@ export function Services() {
           <img src={market} alt="marketing" height={50} width={50} />
           <h3 className="title text-center text-lg md:text-xl">Marketing</h3>
         </div>
-        <div className="card-shine-effect hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
+        <div className="card-shine-effect xl:h-[26vh] hover:scale-110 duration-300 h-[33vh] transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
           <img src={music} alt="Music" height={50} width={50} />
           <h3 className="title text-center text-lg md:text-xl">
             Music & Audio
@@ -60,7 +60,7 @@ export function Services() {
             Video Editing
           </h3>
         </div>
-        <div className="card-shine-effect hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
+        <div className="card-shine-effect h-[33vh] xl:h-[26vh] hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
           <img src={write} alt="Write" height={50} width={50} />
           <h3 className="title text-center text-lg md:text-xl">
             Content Writing & Translation
