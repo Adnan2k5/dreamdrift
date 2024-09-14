@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross1 } from "react-icons/rx";
+
 import { Link } from "react-scroll";
 
-export const Navbar = () => {
+export const Navbar = ({page}) => {
   const [open, setOpen] = useState(false);
+  const [state,setstate] = useState(false)
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => {
@@ -17,6 +18,11 @@ export const Navbar = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+  useEffect(() => {
+    if(page === "home"){
+      setstate(true)
+    }
+  }, [])
 
   return (
     <div>
@@ -34,19 +40,13 @@ export const Navbar = () => {
           <div className="flex components items-center justify-center text-white">
             <ul className="hidden  transition-all duration-300 md:flex lg:flex gap-5">
               <li className="hover:text-gray-300 cursor-pointer">
-                <Link to="home" smooth={true} duration={500}>
-                  Home
-                </Link>
+                {state ? <Link to="home" smooth={true} duration={500}>Home</Link> : <a href="/">Home</a>}
               </li>
               <li className="hover:text-gray-300 cursor-pointer">
-                <Link to="about" smooth={true} duration={500}>
-                  About
-                </Link>
+              {state ? <Link to="about" smooth={true} duration={500}>About</Link> : <a href="/">About</a>}
               </li>
               <li className="hover:text-gray-300 cursor-pointer">
-                <Link to="services" smooth={true} duration={500}>
-                  Services
-                </Link>
+              {state ? <Link to="services" smooth={true} duration={500}>Services</Link> : <a href="/">Services</a>}
               </li>
             </ul>
             <p
@@ -65,19 +65,13 @@ export const Navbar = () => {
       >
         <ul className="flex flex-col items-center gap-5 text-lg">
           <li className="hover:text-gray-300 cursor-pointer">
-            <Link to="home" smooth={true} duration={500}>
-              Home
-            </Link>
+            {state ? <Link to="home" smooth={true} duration={500}>Home</Link> : <a href="/">Home</a>}
           </li>
           <li className="hover:text-gray-300 cursor-pointer">
-            <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>
+            {state ? <Link to="about" smooth={true} duration={500}>About</Link> : <a href="/">About</a>}
           </li>
           <li className="hover:text-gray-300 cursor-pointer">
-            <Link to="services" smooth={true} duration={500}>
-              Services
-            </Link>
+            {state ? <Link to="services" smooth={true} duration={500}>Services</Link> : <a href="/">Services</a>} 
           </li>
         </ul>
       </div>

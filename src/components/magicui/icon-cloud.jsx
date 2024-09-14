@@ -24,7 +24,7 @@ export const cloudProps = {
     clickToFront: 500,
     tooltipDelay: 0,
     outlineColour: "#0000",
-    maxSpeed: 0.04,
+    maxSpeed: 0.06,
     minSpeed: 0.02,
     // dragControl: false,
   },
@@ -40,7 +40,7 @@ export const renderCustomIcon = (icon, theme) => {
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 60,
+    size: 80,
     aProps: {
       href: undefined,
       target: undefined,

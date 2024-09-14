@@ -7,7 +7,7 @@ import { About } from '@/Pages/About'
 export const Layout = ({children}) => {
   return (
     <div>
-        <Navbar/>
+        <Navbar page="home"/>
         <div className="hero md:mt-32 m-auto w-[90vw] p-5 mt-[2rem] h-[80vh]">
             {children}
         </div>

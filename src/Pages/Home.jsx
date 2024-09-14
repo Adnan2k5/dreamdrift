@@ -8,8 +8,6 @@ import social from "../assets/social.png";
 import video from "../assets/video.png";
 import { Link } from "react-scroll";
 
-//#182923
-
 export const Home = () => {
   return (
     <Layout>
