@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import React, { useState } from "react";
-import social from "@/assets/social.png";
-import lead from "@/assets/lead.png";
-import marketing from "@/assets/marketing.png";
-import seo from "@/assets/seo.png"; 
-import comm from "@/assets/comm.png";
-import paid from "@/assets/paid.png";
 import { IoCaretBack } from "react-icons/io5";
+import ai from "@/assets/ai.png";
+import aichat from "@/assets/chat.png";
+import aispeech from "@/assets/speech.png";
+import aivideo from "@/assets/aivideo.png";
+import aiart from "@/assets/aiart.png";
 
-export const Social = () => {
+export const AI = () => {
   const [hover, sethover] = useState(false);
   const [hover1, sethover1] = useState(false);
   const [hover2, sethover2] = useState(false);
@@ -37,8 +36,8 @@ export const Social = () => {
             transition={{ duration: 1 }}
             className="logo flex items-center gap-5 justify-around md:justify-start lg:justify-start md:gap-5 lg:gap-5 rounded-[4rem] p-6"
           >
-            <img src={social} alt="Web" height={60} width={60} />
-            <h1 className="text-white font-mono text-lg">Social Media Management</h1>
+            <img src={ai} alt="Web" height={60} width={60} />
+            <h1 className="text-white font-mono text-lg">AI Services</h1>
           </motion.div>
         </div>
         <div className="mini-card mt-10 rounded-[4rem] flex flex-wrap flex-col md:flex-row lg:flex-row gap-5">
@@ -51,16 +50,12 @@ export const Social = () => {
           >
             <div className="transition-all p-2 rounded-[2rem] duration-500 flex flex-col gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo  flex items-center gap-5">
-                <img src={lead} alt="Web" height={60} width={60} />
-                <h1 className="text-white xl:text-2xl text-lg">Lead Generation</h1>
+                <img src={aichat} alt="Web" height={60} width={60} />
+                <h1 className="text-white xl:text-2xl text-lg">AI Chatbot</h1>
               </div>
               {hover && (
                 <p className="text-white  xl:text-xl text-sm text-wrap">
-                  At Dream Drift, we craft visually stunning, high-performance
-                  websites tailored to your brand. With responsive design,
-                  cutting-edge tech like React and Express, and a focus on user
-                  experience, we ensure your website stands out and drives
-                  results.
+                  At Dream Drift, we craft intelligent AI chatbot systems that deliver instant, personalized responses to customers. Our solutions ensure seamless communication, automate repetitive tasks, and enhance user satisfaction.
                 </p>
               )}
             </div>
@@ -74,12 +69,12 @@ export const Social = () => {
           >
             <div className="transition-all  duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-4 items-center">
-                <img src={marketing} alt="Web" height={60} width={60} />
-                <h1 className="text-white xl:text-2xl text-lg">Social Media Marketing</h1>
+                <img src={aispeech} alt="Web" height={60} width={60} />
+                <h1 className="text-white xl:text-2xl text-lg">AI Speech & Audio</h1>
               </div>
               {hover1 && (
                 <p className="text-white xl:text-xl text-sm text-wrap">
-                  Dream Drift simplifies content management with custom CMS solutions. We build user-friendly, scalable systems that make updating your website effortless. With cutting-edge technology and a focus on intuitive design, we create CMS platforms tailored to your business, allowing you to manage content with ease and efficiency.
+                  At Dream Drift, we develop advanced AI speech and audio systems that deliver crystal-clear communication and intuitive voice recognition. Our solutions are tailored for seamless interaction, supporting various industries with real-time voice processing and automated audio responses. Utilizing cutting-edge AI, we create scalable, high-performance systems that enhance user engagement and improve accessibility.
                 </p>
               )}
             </div>
@@ -93,12 +88,12 @@ export const Social = () => {
           >
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
-                <img src={seo} alt="Web" height={60} width={60} />
-                <h1 className="text-white  xl:text-2xl text-lg">Search Engine Optimization</h1>
+                <img src={aivideo} alt="Web" height={60} width={60} />
+                <h1 className="text-white  xl:text-2xl text-lg">AI Video Editing</h1>
               </div>
               {hover3 && (
                 <p className="text-white xl:text-xl text-sm text-wrap">
-                  At Dream Drift, we harness the power of data to drive informed business decisions. Our data science solutions transform raw data into actionable insights, helping you identify trends, optimize strategies, and predict future outcomes. With advanced analytics and cutting-edge technology, Dream Drift empowers your business with the tools to stay ahead in a data-driven world.
+                 At Dream Drift, we leverage AI to streamline video editing, making it faster and more intuitive. Our AI-powered solutions automate tedious tasks like scene detection, color correction, and transitions, ensuring professional-quality results with minimal effort. Using cutting-edge technology.
                 </p>
               )}
             </div>
@@ -111,30 +106,12 @@ export const Social = () => {
             className="card1 card-shine-effect p-5 hover:md:h-[46vh] md:w-[40vw] hover:h-[54vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]">
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
-                <img src={comm} alt="Web" height={60} width={60} />
-                <h1 className="text-white xl:text-2xl text-lg">Community Management</h1>
+                <img src={aiart} alt="Web" height={60} width={60} />
+                <h1 className="text-white xl:text-2xl text-lg">AI Art & Design</h1>
               </div>
               {hover2 && (
                 <p className="text-white xl:text-xl text-sm text-wrap">
-                  At Dream Drift, we design e-commerce platforms that combine stunning visuals with powerful functionality. Our tailored solutions ensure seamless user experiences, secure transactions, and easy management. Using the latest technologies, we build scalable, high-performing online stores that drive sales and customer engagement. 
-                </p>
-              )}
-            </div>
-          </div>
-          <div
-            onMouseEnter={() => { 
-              sethover4(true);
-            }}
-            onMouseLeave={() => sethover4(false)}
-            className="card1 m-auto card-shine-effect hover:md:h-[40vh] p-5 md:w-[50vw] hover:h-[50vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]">
-            <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
-              <div className="logo  flex gap-5 justify-between items-center">
-                <img src={paid} alt="Web" height={60} width={60} />
-                <h1 className="text-white  xl:text-2xl  text-lg">Paid Colaboration</h1>
-              </div>
-              {hover4 && (
-                <p className="text-white  xl:text-xl text-sm text-wrap">
-                  Dream Drift creates custom CRM and ERM systems that simplify how you manage customer relationships and enterprise resources. Our solutions are designed for efficiency, offering intuitive interfaces and seamless integrations to help you organize data, automate tasks, and improve decision-making.
+                  At Dream Drift, we harness the power of AI to revolutionize art and design, blending creativity with cutting-edge algorithms. Our AI-driven solutions automate design processes, enhance creativity, and produce stunning visuals tailored to your needs. By leveraging advanced technology.
                 </p>
               )}
             </div>

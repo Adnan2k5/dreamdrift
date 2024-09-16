@@ -47,15 +47,15 @@ export const Web = () => {
               sethover(true);
             }}
             onMouseLeave={() => sethover(false)}
-            className="card1 card-shine-effect md:w-1/3 p-5 hover:h-[60vh] hover:items-start  transition-all duration-500 w-full  flex justify-center  items-center rounded-[4rem] h-[10vh]"
+            className="card1 card-shine-effect md:hover:h-[50vh] md:w-[40vw] p-5 hover:h-[60vh] hover:items-start  transition-all duration-500 w-full  flex justify-center  items-center rounded-[4rem] h-[10vh]"
           >
-            <div className="transition-all duration-500 flex flex-col gap-5 items-center md:items-center lg:items-center justify-center">
+            <div className="transition-all  duration-500 flex flex-col gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo  flex items-center gap-5">
                 <img src={websi} alt="Web" height={60} width={60} />
-                <h1 className="text-white text-xl">Web Development</h1>
+                <h1 className="text-white xl:text-2xl text-xl">Web Development</h1>
               </div>
               {hover && (
-                <p className="text-white text-wrap">
+                <p className="text-white xl:text-xl text-wrap">
                   At Dream Drift, we craft visually stunning, high-performance
                   websites tailored to your brand. With responsive design,
                   cutting-edge tech like React and Express, and a focus on user
@@ -70,15 +70,15 @@ export const Web = () => {
               sethover1(true);
             }}
             onMouseLeave={() => sethover1(false)}
-            className="card1 card-shine-effect p-5 md:w-[50vw] md:hover:h-[28vh] hover:h-[66vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]"
+            className="card1 card-shine-effect p-5 md:w-[40vw] md:hover:h-[52vh] hover:h-[66vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]"
           >
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
                 <img src={cms} alt="Web" height={60} width={60} />
-                <h1 className="text-white  text-xl">CMS Development</h1>
+                <h1 className="text-white xl:text-2xl  text-xl">CMS Development</h1>
               </div>
               {hover1 && (
-                <p className="text-white text-wrap">
+                <p className="text-white xl:text-xl text-wrap">
                   Dream Drift simplifies content management with custom CMS solutions. We build user-friendly, scalable systems that make updating your website effortless. With cutting-edge technology and a focus on intuitive design, we create CMS platforms tailored to your business, allowing you to manage content with ease and efficiency.
                 </p>
               )}
@@ -89,15 +89,15 @@ export const Web = () => {
               sethover3(true);
             }}
             onMouseLeave={() => sethover3(false)}
-            className="card1 card-shine-effect p-5 md:w-[40vw] hover:h-[74vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[34vh] flex justify-center items-center  rounded-[4rem] h-[10vh]"
+            className="card1 card-shine-effect p-5 md:w-[40vw] hover:h-[74vh] md:hover:h-[60vh] hover:items-start transition-all duration-500 w-full border-2  flex justify-center items-center  rounded-[4rem] h-[10vh]"
           >
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
                 <img src={datasci} alt="Web" height={60} width={60} />
-                <h1 className="text-white  text-xl">Data Science</h1>
+                <h1 className="text-white xl:text-2xl text-xl">Data Science</h1>
               </div>
               {hover3 && (
-                <p className="text-white text-wrap">
+                <p className="text-white xl:text-xl text-wrap">
                   At Dream Drift, we harness the power of data to drive informed business decisions. Our data science solutions transform raw data into actionable insights, helping you identify trends, optimize strategies, and predict future outcomes. With advanced analytics and cutting-edge technology, Dream Drift empowers your business with the tools to stay ahead in a data-driven world.
                 </p>
               )}
@@ -108,14 +108,14 @@ export const Web = () => {
               sethover2(true);
             }}
             onMouseLeave={() => sethover2(false)}
-            className="card1 card-shine-effect p-5 md:w-[33vw] hover:h-[68vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[34vh] flex justify-center items-center  rounded-[4rem] h-[10vh]">
+            className="card1 card-shine-effect p-5 md:w-[40vw] hover:h-[68vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[56vh] flex justify-center items-center  rounded-[4rem] h-[10vh]">
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
                 <img src={ecomm} alt="Web" height={60} width={60} />
-                <h1 className="text-white  text-xl">Ecom Development</h1>
+                <h1 className="text-white  xl:text-2xl text-xl">Ecom Development</h1>
               </div>
               {hover2 && (
-                <p className="text-white text-wrap">
+                <p className="text-white xl:text-xl text-wrap">
                   At Dream Drift, we design e-commerce platforms that combine stunning visuals with powerful functionality. Our tailored solutions ensure seamless user experiences, secure transactions, and easy management. Using the latest technologies, we build scalable, high-performing online stores that drive sales and customer engagement. 
                 </p>
               )}
@@ -126,14 +126,14 @@ export const Web = () => {
               sethover4(true);
             }}
             onMouseLeave={() => sethover4(false)}
-            className="card1 m-auto card-shine-effect p-5 md:w-[33vw] hover:h-[60 vh] hover:items-start transition-all duration-500 w-full md:hover:h-[34vh] border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]">
+            className="card1 card-shine-effect p-5 md:w-[40vw] hover:h-[68vh] hover:items-start transition-all duration-500 w-full border-2 md:hover:h-[56vh] flex justify-center items-center  rounded-[4rem] h-[10vh]">
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
-              <div className="logo  flex gap-5 justify-between items-center">
+              <div className="logo flex gap-5 items-center">
                 <img src={crm} alt="Web" height={60} width={60} />
-                <h1 className="text-white   text-xl">ERP/CRM</h1>
+                <h1 className="text-white xl:text-2xl text-xl">ERP/CRM</h1>
               </div>
               {hover4 && (
-                <p className="text-white text-wrap">
+                <p className="text-white xl:text-xl text-wrap">
                   Dream Drift creates custom CRM and ERM systems that simplify how you manage customer relationships and enterprise resources. Our solutions are designed for efficiency, offering intuitive interfaces and seamless integrations to help you organize data, automate tasks, and improve decision-making.
                 </p>
               )}

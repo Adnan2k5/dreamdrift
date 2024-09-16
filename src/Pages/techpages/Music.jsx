@@ -1,20 +1,18 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import React, { useState } from "react";
-import social from "@/assets/social.png";
-import lead from "@/assets/lead.png";
-import marketing from "@/assets/marketing.png";
-import seo from "@/assets/seo.png"; 
-import comm from "@/assets/comm.png";
-import paid from "@/assets/paid.png";
 import { IoCaretBack } from "react-icons/io5";
+import music from "@/assets/music.png";
+import podcast from "@/assets/podcast.png";
+import production from "@/assets/production.png";
+import audiobook from "@/assets/audiobook.png";
+import compo from "@/assets/musicomp.png";
 
-export const Social = () => {
+export const Music = () => {
   const [hover, sethover] = useState(false);
   const [hover1, sethover1] = useState(false);
   const [hover2, sethover2] = useState(false);
   const [hover3, sethover3] = useState(false);
-  const [hover4, sethover4] = useState(false);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -37,8 +35,8 @@ export const Social = () => {
             transition={{ duration: 1 }}
             className="logo flex items-center gap-5 justify-around md:justify-start lg:justify-start md:gap-5 lg:gap-5 rounded-[4rem] p-6"
           >
-            <img src={social} alt="Web" height={60} width={60} />
-            <h1 className="text-white font-mono text-lg">Social Media Management</h1>
+            <img src={music} alt="Web" height={60} width={60} />
+            <h1 className="text-white font-mono text-lg">Music & Audio</h1>
           </motion.div>
         </div>
         <div className="mini-card mt-10 rounded-[4rem] flex flex-wrap flex-col md:flex-row lg:flex-row gap-5">
@@ -51,16 +49,12 @@ export const Social = () => {
           >
             <div className="transition-all p-2 rounded-[2rem] duration-500 flex flex-col gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo  flex items-center gap-5">
-                <img src={lead} alt="Web" height={60} width={60} />
-                <h1 className="text-white xl:text-2xl text-lg">Lead Generation</h1>
+                <img src={podcast} alt="Web" height={60} width={60} />
+                <h1 className="text-white xl:text-2xl text-lg">Podcast</h1>
               </div>
               {hover && (
                 <p className="text-white  xl:text-xl text-sm text-wrap">
-                  At Dream Drift, we craft visually stunning, high-performance
-                  websites tailored to your brand. With responsive design,
-                  cutting-edge tech like React and Express, and a focus on user
-                  experience, we ensure your website stands out and drives
-                  results.
+                  At Dream Drift, we produce compelling podcasts that captivate your audience. From planning and recording to editing and distribution, our tailored solutions ensure high-quality content that engages and informs.
                 </p>
               )}
             </div>
@@ -74,12 +68,12 @@ export const Social = () => {
           >
             <div className="transition-all  duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-4 items-center">
-                <img src={marketing} alt="Web" height={60} width={60} />
-                <h1 className="text-white xl:text-2xl text-lg">Social Media Marketing</h1>
+                <img src={production} alt="Web" height={60} width={60} />
+                <h1 className="text-white xl:text-2xl text-lg">Music Production</h1>
               </div>
               {hover1 && (
                 <p className="text-white xl:text-xl text-sm text-wrap">
-                  Dream Drift simplifies content management with custom CMS solutions. We build user-friendly, scalable systems that make updating your website effortless. With cutting-edge technology and a focus on intuitive design, we create CMS platforms tailored to your business, allowing you to manage content with ease and efficiency.
+                  At Dream Drift, we offer expert music production services that bring your musical vision to life. Our tailored solutions cover everything from recording and mixing to mastering, ensuring top-notch sound quality and creativity. 
                 </p>
               )}
             </div>
@@ -93,12 +87,12 @@ export const Social = () => {
           >
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
-                <img src={seo} alt="Web" height={60} width={60} />
-                <h1 className="text-white  xl:text-2xl text-lg">Search Engine Optimization</h1>
+                <img src={audiobook} alt="Web" height={60} width={60} />
+                <h1 className="text-white  xl:text-2xl text-lg">Audio Book</h1>
               </div>
               {hover3 && (
                 <p className="text-white xl:text-xl text-sm text-wrap">
-                  At Dream Drift, we harness the power of data to drive informed business decisions. Our data science solutions transform raw data into actionable insights, helping you identify trends, optimize strategies, and predict future outcomes. With advanced analytics and cutting-edge technology, Dream Drift empowers your business with the tools to stay ahead in a data-driven world.
+                 At Dream Drift, we specialize in producing high-quality audiobooks that captivate listeners. Our services include narration, recording, and editing to ensure a professional and engaging audio experience. 
                 </p>
               )}
             </div>
@@ -111,30 +105,12 @@ export const Social = () => {
             className="card1 card-shine-effect p-5 hover:md:h-[46vh] md:w-[40vw] hover:h-[54vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]">
             <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
               <div className="logo flex gap-5 items-center">
-                <img src={comm} alt="Web" height={60} width={60} />
-                <h1 className="text-white xl:text-2xl text-lg">Community Management</h1>
+                <img src={compo} alt="Web" height={60} width={60} />
+                <h1 className="text-white xl:text-2xl text-lg">Music Composition</h1>
               </div>
               {hover2 && (
                 <p className="text-white xl:text-xl text-sm text-wrap">
-                  At Dream Drift, we design e-commerce platforms that combine stunning visuals with powerful functionality. Our tailored solutions ensure seamless user experiences, secure transactions, and easy management. Using the latest technologies, we build scalable, high-performing online stores that drive sales and customer engagement. 
-                </p>
-              )}
-            </div>
-          </div>
-          <div
-            onMouseEnter={() => { 
-              sethover4(true);
-            }}
-            onMouseLeave={() => sethover4(false)}
-            className="card1 m-auto card-shine-effect hover:md:h-[40vh] p-5 md:w-[50vw] hover:h-[50vh] hover:items-start transition-all duration-500 w-full border-2 flex justify-center items-center  rounded-[4rem] h-[10vh]">
-            <div className="transition-all duration-500 flex-col flex gap-5 items-center md:items-center lg:items-center justify-center">
-              <div className="logo  flex gap-5 justify-between items-center">
-                <img src={paid} alt="Web" height={60} width={60} />
-                <h1 className="text-white  xl:text-2xl  text-lg">Paid Colaboration</h1>
-              </div>
-              {hover4 && (
-                <p className="text-white  xl:text-xl text-sm text-wrap">
-                  Dream Drift creates custom CRM and ERM systems that simplify how you manage customer relationships and enterprise resources. Our solutions are designed for efficiency, offering intuitive interfaces and seamless integrations to help you organize data, automate tasks, and improve decision-making.
+                  At Dream Drift, we create original music compositions tailored to your needs. Our services include crafting melodies, harmonies, and arrangements that enhance your project and evoke the desired emotion.
                 </p>
               )}
             </div>
