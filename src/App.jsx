@@ -10,7 +10,9 @@ import { AI } from './Pages/techpages/AI';
 import { Marketing } from './Pages/techpages/marketing';
 import {Music} from './Pages/techpages/Music';
 import {Design} from './Pages/techpages/Design';
-
+import {Video} from './Pages/techpages/Video';
+import {Write} from './Pages/techpages/Write';
+import {Data} from './Pages/techpages/Data';
 function App() {
   return (
     <>
@@ -25,6 +27,9 @@ function App() {
           <Route path='/market' element={<Marketing/>}/>
           <Route path='/music' element={<Music/>}/>
           <Route path='/design' element={<Design/>}/>
+          <Route path='/video' element={<Video/>}/>
+          <Route path='/write' element={<Write/>}/>
+          <Route path='/data' element={<Data/>}/>
         </Routes>
       </Router>
     </>

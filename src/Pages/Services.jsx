@@ -63,24 +63,30 @@ export function Services() {
             <h3 className="title text-center text-lg md:text-xl">Designing</h3>
           </div>
         </a>
-        <div className="card-shine-effect hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
-          <img src={video} alt="Video" height={50} width={50} />
-          <h3 className="title text-center text-lg md:text-xl">
-            Video Editing
-          </h3>
-        </div>
-        <div className="card-shine-effect h-[33vh] xl:h-[26vh] hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
-          <img src={write} alt="Write" height={50} width={50} />
-          <h3 className="title text-center text-lg md:text-xl">
-            Content Writing & Translation
-          </h3>
-        </div>
-        <div className="card-shine-effect hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
-          <img src={data} alt="Data" height={50} width={50} />
-          <h3 className="title text-center text-lg md:text-xl">
-            Data Analysis
-          </h3>
-        </div>
+        <a href="/video" className="w-full md:w-[25vw]">
+          <div className="card-shine-effect hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
+            <img src={video} alt="Video" height={50} width={50} />
+            <h3 className="title text-center text-lg md:text-xl">
+              Video Editing
+            </h3>
+          </div>
+        </a>
+        <a href="/write" className="w-full md:w-[25vw]">
+          <div className="card-shine-effect h-[33vh] xl:h-[26vh] hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
+            <img src={write} alt="Write" height={50} width={50} />
+            <h3 className="title text-center text-lg md:text-xl">
+              Content Writing & Translation
+            </h3>
+          </div>
+        </a>
+        <a href="/data" className="w-full md:w-[25vw]">
+          <div className="card-shine-effect hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
+            <img src={data} alt="Data" height={50} width={50} />
+            <h3 className="title text-center text-lg md:text-xl">
+              Data Analysis
+            </h3>
+          </div>
+        </a>
       </div>
     </div>
   );
