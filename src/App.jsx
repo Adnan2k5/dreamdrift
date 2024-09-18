@@ -13,6 +13,7 @@ import {Design} from './Pages/techpages/Design';
 import {Video} from './Pages/techpages/Video';
 import {Write} from './Pages/techpages/Write';
 import {Data} from './Pages/techpages/Data';
+import { Contact } from './Pages/Contact';
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
           <Route path='/video' element={<Video/>}/>
           <Route path='/write' element={<Write/>}/>
           <Route path='/data' element={<Data/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </Router>
     </>

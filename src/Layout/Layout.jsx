@@ -17,6 +17,9 @@ export const Layout = ({children}) => {
         <div id='services' className="services p-5 m-auto w-[90vw] mt-[12rem]">
           <Services/>
         </div>
+        <div className="footer mt-[90vh] h-[10vh]">
+          <Footer/>
+        </div>
     </div>
   )
 }
