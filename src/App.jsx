@@ -22,16 +22,16 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="https://www.dreamdriftservices.com/web" element={<Web />} />
-          <Route path="https://www.dreamdriftservices.com/social" element={<Social />} />
-          <Route path='https://www.dreamdriftservices.com/ai' element={<AI/>}/>
-          <Route path='https://www.dreamdriftservices.com/market' element={<Marketing/>}/>
-          <Route path='https://www.dreamdriftservices.com/music' element={<Music/>}/>
-          <Route path='https://www.dreamdriftservices.com/design' element={<Design/>}/>
-          <Route path='https://www.dreamdriftservices.com/video' element={<Video/>}/>
-          <Route path='https://www.dreamdriftservices.com/write' element={<Write/>}/>
-          <Route path='https://www.dreamdriftservices.com/data' element={<Data/>}/>
-          <Route path='https://www.dreamdriftservices.com/contact' element={<Contact/>}/>
+          <Route path="/web" element={<Web />} />
+          <Route path="/social" element={<Social />} />
+          <Route path='/ai' element={<AI/>}/>
+          <Route path='/market' element={<Marketing/>}/>
+          <Route path='/music' element={<Music/>}/>
+          <Route path='/design' element={<Design/>}/>
+          <Route path='/video' element={<Video/>}/>
+          <Route path='/write' element={<Write/>}/>
+          <Route path='/data' element={<Data/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </Router>
     </>
