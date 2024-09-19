@@ -7,6 +7,8 @@ export const Navbar = ({page}) => {
   const [open, setOpen] = useState(false);
   const [state,setstate] = useState(false)
   const [scrolled, setScrolled] = useState(false);
+
+  
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 10) {
