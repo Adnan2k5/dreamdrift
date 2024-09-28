@@ -1,9 +1,9 @@
 import React from 'react'
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
-import { Services } from '@/Pages/Services'
-import { About } from '@/Pages/About'
-import { Front } from '@/Pages/front'
+import { Services } from '../Pages/Services'
+import { About } from '../Pages/About'
+import { Front } from '../Pages/Front'
 
 export const Layout = ({children}) => {
   return (

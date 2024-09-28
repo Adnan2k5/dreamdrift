@@ -1,15 +1,10 @@
 import React from "react";
-import { Layout } from "../Layout/Layout";
-import business from "../assets/bussiness.jpg";
-import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
-import { cn } from "@/lib/utils";
+
 import webd from "../assets/website.png";
 import social from "../assets/social-media.png";
 import video from "../assets/blog.png";
-import { Link } from "react-scroll";
+
 import { motion } from "framer-motion";
-import { FadeText } from "@/components/ui/fade-text";
-import GradualSpacing from "@/components/ui/gradual-spacing";
 
 export const Front = () => {
   return (
@@ -22,11 +17,11 @@ export const Front = () => {
         className="services flex flex-col justify-center items-center mt-64"
       >
         <div className="par bg-gray-400 p-4 rounded-lg">
-        <p className="text-xl  font-bold  md:text-4xl font-sans rounded-2xl tracking-widest text-black text-center">
-          Our Services
-        </p>
+          <p className="text-xl  font-bold  md:text-4xl font-sans rounded-2xl tracking-widest text-black text-center">
+            Our Services
+          </p>
         </div>
-        
+
         <ul className="flex w-full flex-col md:flex-row items-center gap-10 md:justify-around justify-around h-fit  mt-12 p-4 text-white text-wrap text-sm">
           <li className="w-1/3 hover:scale-125 transition-all duration-300 hover:text-cyan-600 md:text-xl text-center flex gap-2 text-white flex-col justify-center items-center">
             <img
