@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
   
+
+@font-face {
+    font-family: 'comic';
+    src: url('./assets/JosefinSans-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'DmSans';
+    src: url('./assets/DMSans.ttf');
+}

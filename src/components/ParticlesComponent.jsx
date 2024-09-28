@@ -20,11 +20,11 @@ const ParticlesComponent = (props) => {
 
   const options = useMemo(
     () => ({
-      // background: {
-      //   color: {
-      //     value: "#000000",
-      //   },
-      // },
+      background: {
+        color: {
+          value: "#fffff",
+        },
+      },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -55,7 +55,7 @@ const ParticlesComponent = (props) => {
           color: "#FFFFFF",
           distance: 150,
           enable: true,
-          opacity: 0.3,
+          opacity: 0.6,
           width: 1,
         },
         move: {
@@ -75,7 +75,7 @@ const ParticlesComponent = (props) => {
           value: 150,
         },
         opacity: {
-          value: 0.5,
+          value: 0.2,
         },
         shape: {
           type: "circle",

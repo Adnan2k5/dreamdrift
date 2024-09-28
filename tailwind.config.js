@@ -17,6 +17,11 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        comic : ["comic","sans"],
+        DmSans: ["DmSans", "sans-serif"],
+
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

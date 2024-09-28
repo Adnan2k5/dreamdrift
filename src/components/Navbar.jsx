@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import dream from '../assets/dream.png'
 
 import { Link } from "react-scroll";
 
@@ -30,14 +31,12 @@ export const Navbar = ({page}) => {
     <div>
       <div
         className={`flex backdrop:blur-lg  fixed top-0 left-0 z-50 p-2 items-center ${
-          scrolled ? "bg-[#182923]/90 backdrop-blur-md" : "bg-[#182923]/50"
-        }  justify-center w-screen h-[10vh] bg-[#182923]`}
+          scrolled ? "backdrop-blur-md" : ""
+        }  justify-center w-screen h-[10vh]`}
       >
         <div className="nav w-[90%] flex justify-between m-auto">
-          <div className="nav-logo flex items-center p-2 justify-center">
-            <h1 className="font-mono md:text-xl lg:text-2xl text-white text-lg">
-              Dream Drift Services
-            </h1>
+          <div className="nav-logo flex w-[10vw] items-center justify-center">
+          <img src={dream} width={90} alt="dream"/>
           </div>
           <div className="flex components items-center justify-center text-white">
             <ul className="hidden  transition-all duration-300 md:flex lg:flex gap-5">

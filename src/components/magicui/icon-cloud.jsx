@@ -9,7 +9,7 @@ export const cloudProps = {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      width: "100%",
+      width: "40vw",
       paddingTop: 40,
     },
   },
@@ -32,7 +32,7 @@ export const cloudProps = {
 
 export const renderCustomIcon = (icon, theme) => {
   const bgHex = theme === "light" ? "#080510" : "#080510";
-  const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
+  const fallbackHex = theme === "dark" ? "#6e6e73" : "#ffffff";
   const minContrastRatio = theme === "dark" ? 2 : 1.2;
 
   return renderSimpleIcon({
@@ -40,7 +40,7 @@ export const renderCustomIcon = (icon, theme) => {
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 80,
+    size: 60,
     aProps: {
       href: undefined,
       target: undefined,

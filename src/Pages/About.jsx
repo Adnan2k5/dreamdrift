@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 import qoute from "../assets/qoute.png";
+import TextReveal from "@/components/magicui/text-reveal";
 
 const slugs = [
   "typescript",
@@ -50,23 +51,19 @@ export const About = () => {
         viewport={{ once: false, amount: 0.5 }}
         className="main flex flex-col md:flex-row lg:flex-row   p-5 items-center w-full h-[full]"
       >
-        <div className="about  justify-start flex flex-col w-full md:mt-24 h-full rounded-lg text-white">
-          <h1 className="text-2xl md:text-4xl border-b-2 border-cyan-400 w-fit">
+        <div className="about  justify-start flex flex-col w-full md:mt-24 h-full rounded-lg text-[#A9A9A9]">
+          <h1 className="text-2xl tracking-[0.4rem] md:text-4xl border-b-2 border-white/40 w-fit">
             About Us
           </h1>
           <div className="title flex gap-5 mt-8">
             <span className="flex justify-start">
               <img src={qoute} alt="qoute" className="w-12 h-12" />
             </span>
-            <p className="text-lg w-full text-justify text-wrap md:text-xl mt-4">
+            <p className="text-lg w-full text-justify md:text-xl mt-4">
               At Dream Drift Services, we are passionate about helping
               businesses grow through creative solutions. Our team specializes
               in web design and development, video editing, social media
-              management, and graphic design. With a focus on delivering
-              high-quality services tailored to your needs, we strive to turn
-              your vision into reality. Whether you're looking to enhance your
-              online presence or create compelling content, we're here to
-              support you every step of the way.
+              management, and graphic design.
             </p>
           </div>
         </div>
@@ -79,7 +76,7 @@ export const About = () => {
         className="tech-stack  text-2xl md:text-4xl mt-44"
       >
         <span className="flex justify-end">
-          <h1 className="text-white border-b-2  border-cyan-400 w-fit">
+          <h1 className="text-[#A9A9A9] tracking-[0.4rem] border-b-2 border-white/40 w-fit">
             Tech Stack
           </h1>
         </span>
@@ -96,9 +93,7 @@ export const About = () => {
               standards of quality and efficiency.
             </p>
           </div>
-          <div className=" mt-8  flex flex-col h-full  w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
             <IconCloud iconSlugs={slugs} />
-          </div>
         </div>
       </motion.div>
     </div>

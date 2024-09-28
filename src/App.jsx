@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Home } from './Pages/Home';
+// import { Home } from './Pages/Home';
 import AnimatedCursor from 'react-animated-cursor';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ParticlesComponent from './components/ParticlesComponent';
@@ -14,6 +14,7 @@ import {Video} from './Pages/Video';
 import {Write} from './Pages/Write';
 import {Data} from './Pages/Data';
 import { Contact } from './Pages/Contact';
+import { Homeback } from './Pages/Homeback';
 function App() {
   return (
     <>
@@ -21,7 +22,7 @@ function App() {
       <AnimatedCursor color="0,255,255" />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Homeback />} />
           <Route path="/web" element={<Web />} />
           <Route path="/social" element={<Social />} />
           <Route path='/ai' element={<AI/>}/>
