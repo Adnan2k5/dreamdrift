@@ -14,7 +14,8 @@ import {Video} from './Pages/Video';
 import {Write} from './Pages/Write';
 import {Data} from './Pages/Data';
 import { Contact } from './Pages/Contact';
-import { Homeback } from './Pages/Homeback';
+import { Home } from './Pages/Home';
+
 function App() {
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
       <AnimatedCursor color="0,255,255" />
       <Router>
         <Routes>
-          <Route path="/" element={<Homeback />} />
+          <Route path="/" element={<Home />} />
           <Route path="/web" element={<Web />} />
           <Route path="/social" element={<Social />} />
           <Route path='/ai' element={<AI/>}/>
