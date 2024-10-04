@@ -12,7 +12,7 @@ export const Footer = () => {
           </p>
           <p className='flex items-center justify-center gap-2'>
             <img src={phone} alt="phone" width={20} height={20}/>
-            <p className="text-white">0651 040 6652 3939</p>
+            <p className="text-white">+91 6301 917 124</p>
           </p>
         </div>
         
