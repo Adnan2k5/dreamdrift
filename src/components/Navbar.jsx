@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import dream from '../assets/dream.png'
+import dream from '../assets/dds.jpeg'
 
 import { Link } from "react-scroll";
 
@@ -36,7 +36,7 @@ export const Navbar = ({page}) => {
       >
         <div className="nav w-[90%] flex justify-between m-auto">
           <div className="nav-logo flex w-[10vw] items-center justify-center">
-          <img src={dream} width={90} alt="dream"/>
+          <img src={dream} width={70}  height={70} alt="dream"/>
           </div>
           <div className="flex components items-center justify-center text-white">
             <ul className="hidden  transition-all duration-300 md:flex lg:flex gap-5">

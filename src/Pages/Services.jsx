@@ -19,11 +19,11 @@ export function Services() {
         </h1>
       </div>
       <div className="content mt-8 flex md:max-h-9 w-full gap-5 justify-around items-center flex-wrap">
-        <a className="w-full  md:w-[25vw]" href="/web">
+        <a className="w-full  md:w-[25vw]" href="/music">
           <div className="card-shine-effect md:h-[33vh] hover:scale-105 duration-300 transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
             <img src={music} alt="Music" height={50} width={50} />
             <h3 className="title text-wrap text-center text-lg">
-              Music & Audio
+              Music Production
             </h3>
           </div>
         </a>
@@ -49,7 +49,7 @@ export function Services() {
             <h3 className="title text-center text-lg">Marketing</h3>
           </div>
         </a>
-        <a href="/music" className="w-full md:w-[25vw]">
+        <a href="/web" className="w-full md:w-[25vw]">
           <div className="card-shine-effect xl:h-[26vh] hover:scale-110 duration-300  transition-all flex flex-col justify-center items-center gap-3  w-full mb-10 md:mb-0 md:w-[25vw]">
             <img src={webd} alt="Web" height={50} width={50} />
             <h3 className="title text-center md:h-[5vh]  text-lg">
